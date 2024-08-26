@@ -6,7 +6,7 @@ def exibir_menu():
     mes = date.today().month
     ano = date.today().year
 
-    print(f'\n{"="*50}')
+    print(f'\n{"="*0}')
     print(f'BANCO NAJA LÚCIA | {dia:02d}/{mes:02d}/{ano}')
     print(f'{"="*50}\n')
     print('1 - Criar Conta')
@@ -32,9 +32,9 @@ def exibir_dados(nome, i, saldo):
 
 # Função para depositar valor
 def depositar_valor(saldo, valor):
-    """
-    Adiciona um valor ao saldo atual.
-    """
+
+    # Adiciona um valor ao saldo atual.
+   
     if valor > 0:
         saldo += valor
     else:
@@ -43,9 +43,8 @@ def depositar_valor(saldo, valor):
 
 # Função para sacar valor
 def sacar_valor(saldo, valor):
-    """
-    Subtrai um valor do saldo atual.
-    """
+
+#   Subtrai um valor do saldo atual.
     if valor > 0:
         if valor <= saldo:
             saldo -= valor
